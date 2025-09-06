@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotateHealthX - Connecting Medical AI with Human Expertise</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A101F; /* A deep navy blue for a professional feel */
+            color: #E2E8F0; /* Light gray for readability */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38BDF8, #67E8F9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold gradient-text">NotateHealthX</a>
+                </div>
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#services" class="text-slate-300 hover:text-cyan-400 transition-colors">For Companies</a>
+                    <a href="#doctors" class="text-slate-300 hover:text-cyan-400 transition-colors">For Doctors</a>
+                    <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors">About Us</a>
+                </nav>
+                <div>
+                    <a href="#contact" class="cta-button inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-5 rounded-lg">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 text-center overflow-hidden">
+             <div class="absolute inset-0 bg-grid-slate-800/40 [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] bg-cyan-500/10 rounded-full blur-3xl" aria-hidden="true"></div>
+            <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                    Empowering Medical AI with <span class="gradient-text">Precision Human Expertise</span>
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-400">
+                    We bridge the gap between innovative AI companies and expert MBBS doctors to deliver world-class medical data annotation, validation, and training.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#services" class="cta-button w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg">
+                        For AI Companies
+                    </a>
+                    <a href="#doctors" class="cta-button w-full sm:w-auto bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-lg text-lg">
+                        For Medical Professionals
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section (For Companies) -->
+        <section id="services" class="py-20 bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Accelerate Your AI Development</h2>
+                    <p class="mt-4 text-lg text-slate-400">Our services are designed to provide the highest quality data and insights.</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Card 1 -->
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-cyan-500 text-white">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-white">Medical Data Annotation</h3>
+                        <p class="mt-2 text-base text-slate-400">Precise and consistent annotation of medical images (X-rays, CTs, MRIs) and text by certified doctors, ensuring your models train on ground-truth data.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-cyan-500 text-white">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-white">AI Model Validation</h3>
+                        <p class="mt-2 text-base text-slate-400">Rigorous validation of your AI model's output by specialists. We provide detailed feedback and performance metrics to help you achieve regulatory compliance and clinical readiness.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-cyan-500 text-white">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-white">Custom Expert Teams</h3>
+                        <p class="mt-2 text-base text-slate-400">We assemble dedicated teams of doctors with the specific domain expertise your project requires, from radiology to pathology, ensuring nuanced and context-aware results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section is now a more detailed About Us -->
+        <section id="about" class="py-20 bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Pioneering the Future of Medical AI</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-400">NotateHealthX was born from a shared vision between the worlds of medicine and artificial intelligence. We believe that the key to unlocking the true potential of medical AI lies in the synergy between brilliant technology and irreplaceable human expertise.</p>
+                
+                <!-- Founders section -->
+                <div class="mt-20">
+                    <h3 class="text-2xl font-bold text-white tracking-tight sm:text-3xl">Meet Our Founders</h3>
+                    <p class="mt-3 max-w-2xl mx-auto text-md text-slate-400">The driving force behind our mission.</p>
+                    <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2">
+                        <!-- Founder 1 -->
+                        <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                            <img class="h-24 w-24 rounded-full" src="https://placehold.co/150x150/0F172A/67E8F9?text=PM" alt="Pranay Marlecha">
+                            <h4 class="mt-4 text-xl font-bold text-white">Pranay Marlecha</h4>
+                            <p class="text-base text-cyan-400">Co-Founder</p>
+                            <a href="https://www.linkedin.com/in/marlechapranay/" target="_blank" rel="noopener noreferrer" class="mt-4 text-slate-400 hover:text-cyan-300 transition-colors" title="LinkedIn Profile">
+                                <span class="sr-only">LinkedIn</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </div>
+                        <!-- Founder 2 -->
+                        <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                            <img class="h-24 w-24 rounded-full" src="https://placehold.co/150x150/0F172A/67E8F9?text=JG" alt="Jaiprakash Gurav">
+                            <h4 class="mt-4 text-xl font-bold text-white">Jaiprakash Gurav</h4>
+                            <p class="text-base text-cyan-400">Co-Founder</p>
+                            <a href="https://www.linkedin.com/in/jaiprakash-gurav-b7400b224/" target="_blank" rel="noopener noreferrer" class="mt-4 text-slate-400 hover:text-cyan-300 transition-colors" title="LinkedIn Profile">
+                                <span class="sr-only">LinkedIn</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client section -->
+                <div class="mt-20">
+                    <h3 class="text-base font-semibold text-slate-400 tracking-wider uppercase">Proudly Partnered With</h3>
+                    <div class="mt-6">
+                        <a href="https://www.curiedx.com" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-slate-200 hover:text-white transition-colors tracking-tight" title="Visit CurieDx">
+                           CurieDx
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Let's Build the Future of Healthcare Together</h2>
+                <p class="mt-4 text-lg text-slate-400">
+                    Whether you're an AI company looking for expert annotators or a doctor wanting to join our network, we'd love to hear from you.
+                </p>
+                <div class="mt-8 glass-card rounded-2xl p-8 text-left">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-slate-300">Full Name</label>
+                                <input type="text" name="full-name" id="full-name" class="mt-1 block w-full bg-slate-800 border border-slate-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-cyan-500 focus:border-cyan-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-300">Email Address</label>
+                                <input type="email" name="email" id="email" class="mt-1 block w-full bg-slate-800 border border-slate-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-cyan-500 focus:border-cyan-500">
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                             <label for="subject" class="block text-sm font-medium text-slate-300">I am a...</label>
+                            <select id="subject" name="subject" class="mt-1 block w-full bg-slate-800 border border-slate-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-cyan-500 focus:border-cyan-500">
+                                <option>Representative from an AI Company</option>
+                                <option>Medical Professional wanting to join</option>
+                                <option>Other Inquiry</option>
+                            </select>
+                        </div>
+                         <div class="mt-6">
+                            <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full bg-slate-800 border border-slate-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-cyan-500 focus:border-cyan-500"></textarea>
+                        </div>
+                         <div class="mt-6 text-right">
+                             <button type="button" id="send-message-btn" class="cta-button w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <!-- Social media icons can be added here -->
+                    <a href="#" class="text-slate-400 hover:text-slate-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0 md:order-1">
+                    <p class="text-center text-base text-slate-400">&copy; 2025 NotateHealthX. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sendMessageBtn = document.getElementById('send-message-btn');
+            
+            sendMessageBtn.addEventListener('click', () => {
+                const fullName = document.getElementById('full-name').value;
+                const email = document.getElementById('email').value;
+                const subjectType = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                if (!fullName || !email || !message) {
+                    alert('Please fill out all required fields.');
+                    return;
+                }
+
+                const subject = `New Message from ${fullName} via NotateHealthX Website`;
+                
+                const body = `You have a new contact form submission from your NotateHealthX website:\n
+Name: ${fullName}\n
+Email: ${email}\n
+Inquiry Type: ${subjectType}\n
+-------------------------------------------\n
+Message:\n
+${message}
+                `;
+
+                const mailtoLink = `mailto:pranay123m@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                window.location.href = mailtoLink;
+            });
+        });
+    </script>
+</body>
+</html>
+
